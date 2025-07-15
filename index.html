@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tráfego Pago no Meta Ads | Aumente Suas Vendas</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #1ebe5c;
+    }
+  </style>
+
 </head>
+
 <body class="bg-gray-50 text-gray-800">
-  
+
   <!-- Cabeçalho -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
@@ -18,9 +48,12 @@
   <!-- Hero -->
   <section class="bg-gradient-to-r from-blue-800 to-blue-950 text-white py-16 px-6">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl font-extrabold mb-4">🚀 Acelere suas vendas com Tráfego Pago no Meta Ads!</h2>
-      <p class="text-lg">Conquiste mais clientes e aumente seu faturamento com anúncios estratégicos no Facebook & Instagram.</p>
-      <a href="#planos" class="mt-8 inline-block bg-white text-blue-700 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition">Quero Atrair Mais Clientes</a>
+      <h2 class="text-5xl font-extrabold mb-4">Acelere suas vendas com Tráfego Pago no Meta Ads!</h2>
+      <p class="text-lg">Conquiste mais clientes e aumente seu faturamento com anúncios estratégicos no Facebook &
+        Instagram.</p>
+      <a href="#planos"
+        class="mt-8 inline-block bg-white text-blue-700 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition">Quero
+        Atrair Mais Clientes</a>
     </div>
   </section>
 
@@ -38,7 +71,9 @@
           </ul>
         </div>
         <div>
-          <p class="text-gray-700 text-lg">Com campanhas bem estruturadas, você atrai pessoas realmente interessadas no seu produto ou serviço, aumentando suas vendas de forma consistente.</p>
+          <p class="text-gray-900 text-lg border-4 border-black-200 p-8 rounded-l text-justify">Com campanhas bem
+            estruturadas, você atrai pessoas realmente interessadas no seu produto ou serviço, aumentando suas vendas de
+            forma consistente.</p>
         </div>
       </div>
     </div>
@@ -56,7 +91,8 @@
           <li>✅ Fortalecimento da sua marca</li>
         </ul>
         <div>
-          <p class="text-gray-700 text-lg">Deixe que nossos especialistas criem campanhas personalizadas e focadas em resultados reais para o seu negócio.</p>
+          <p class="text-gray-900 text-lg border-4 border-black-200 p-8 rounded-l text-justify">Deixe que nossos
+            especialistas criem campanhas personalizadas e focadas em resultados reais para o seu negócio.</p>
         </div>
       </div>
     </div>
@@ -68,85 +104,104 @@
       <h2 class="text-3xl font-bold mb-10">💼 Planos e Preços</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Plano Iniciante -->
-        <div class="border-4 border-gray-200 rounded-lg p-8 shadow-md hover:border-blue-600 transition cursor-pointer" data-plano="Plano Iniciante" data-valor="490">
+        <div
+          class="plano border-4 border-gray-200 rounded-lg p-8 shadow-md hover:border-blue-600 transition cursor-pointer"
+          data-plano="Plano Iniciante" data-valor="590">
           <h3 class="text-2xl font-bold mb-4 text-blue-700">Plano Iniciante</h3>
           <p class="text-4xl font-extrabold mb-2">R$ 590<span class="text-lg font-medium">/mês</span></p>
           <p class="mb-6 text-gray-600">Ideal para pequenos negócios que estão começando no digital.</p>
           <ul class="text-left mb-6 space-y-2 text-gray-700">
+            <li>✔️ Até 2 campanhas mensais</li>
             <li>✔️ Gestão de campanha básica</li>
             <li>✔️ Relatório mensal simples</li>
             <li>✔️ Suporte via WhatsApp</li>
           </ul>
-          <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition btn-plano">Quero Este Plano</button>
+          <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition btn-plano">Quero
+            Este Plano</button>
         </div>
 
         <!-- Plano Essencial -->
-        <div class="border-4 border-gray-200 rounded-lg p-8 shadow-md hover:border-blue-600 transition cursor-pointer" data-plano="Plano Essencial" data-valor="890">
+        <div
+          class="plano border-4 border-gray-200 rounded-lg p-8 shadow-md hover:border-blue-600 transition cursor-pointer"
+          data-plano="Plano Essencial" data-valor="990">
           <h3 class="text-2xl font-bold mb-4 text-blue-700">Plano Essencial</h3>
           <p class="text-4xl font-extrabold mb-2">R$ 990<span class="text-lg font-medium">/mês</span></p>
           <p class="mb-6 text-gray-600">Para empresas que querem crescer no digital com eficiência.</p>
           <ul class="text-left mb-6 space-y-2 text-gray-700">
+            <li>✔️ Até 4 campanhas mensais</li>
             <li>✔️ Estratégia de anúncios personalizada</li>
             <li>✔️ Otimizações semanais</li>
             <li>✔️ Relatório detalhado mensal</li>
             <li>✔️ Suporte prioritário via WhatsApp</li>
           </ul>
-          <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition btn-plano">Quero Este Plano</button>
+          <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition btn-plano">Quero
+            Este Plano</button>
         </div>
 
         <!-- Plano Premium -->
-        <div class="border-4 border-gray-200 rounded-lg p-8 shadow-md hover:border-blue-600 transition cursor-pointer" data-plano="Plano Premium" data-valor="1490">
+        <div
+          class=" plano border-4 border-gray-200 rounded-lg p-8 shadow-md hover:border-blue-600 transition cursor-pointer"
+          data-plano="Plano Premium" data-valor="1490">
           <h3 class="text-2xl font-bold mb-4 text-blue-700">Plano Premium</h3>
           <p class="text-4xl font-extrabold mb-2">R$ 1.490<span class="text-lg font-medium">/mês</span></p>
           <p class="mb-6 text-gray-600">Para empresas que buscam alta performance e escala.</p>
           <ul class="text-left mb-6 space-y-2 text-gray-700">
+            <li>✔️ Campanhas ilimitadas</li>
             <li>✔️ Gestão de campanhas avançada</li>
-            <li>✔️ Relatórios semanais + dashboard em tempo real</li>
+            <li>✔️ Relatórios semanais</li>
             <li>✔️ Testes A/B contínuos</li>
             <li>✔️ Suporte premium dedicado</li>
           </ul>
-          <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition btn-plano">Quero Este Plano</button>
+          <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition btn-plano">Quero
+            Este Plano</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <section class="bg-blue-900 text-white py-8 px-6">
+  <section class="bg-black text-white py-16 px-6">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-xl font-semibold mb-2">⚡ Seja visto. Seja lembrado. Venda mais.</h2>
       <p>Não perca tempo! Seus concorrentes já estão investindo em tráfego pago. Chegou sua vez de crescer.</p>
-      <br><br>
-<p>&copy; 2025 | Todos os direitos reservados</p>
     </div>
-
   </section>
+
+  <a href="https://wa.me/5561999822652?text=Olá%2C%20quero%20fazer%20um%20orçamento" class="whatsapp-float"
+    target="_blank" title="Fale conosco no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
+      <path
+        d="M12 .5C5.648.5.5 5.648.5 12c0 2.057.537 4.025 1.556 5.77L.5 23.5l5.852-1.527A11.425 11.425 0 0012 23.5c6.352 0 11.5-5.148 11.5-11.5S18.352.5 12 .5zm0 21a9.427 9.427 0 01-4.847-1.32l-.347-.206-3.475.908.927-3.39-.226-.355A9.43 9.43 0 012.5 12c0-5.246 4.254-9.5 9.5-9.5s9.5 4.254 9.5 9.5-4.254 9.5-9.5 9.5zm5.142-6.698c-.283-.142-1.674-.826-1.933-.92-.258-.095-.447-.142-.636.142-.188.283-.732.92-.898 1.11-.165.188-.33.212-.613.071-.283-.142-1.194-.439-2.274-1.401-.84-.748-1.407-1.674-1.574-1.957-.165-.283-.018-.436.124-.578.127-.126.283-.33.425-.495.142-.165.188-.283.283-.472.095-.188.047-.354-.023-.496-.071-.142-.637-1.54-.874-2.107-.23-.553-.464-.478-.637-.478h-.547c-.188 0-.496.071-.755.354-.259.283-1.001.975-1.001 2.378s1.025 2.76 1.167 2.952c.142.189 2.02 3.08 4.895 4.314.685.295 1.218.472 1.635.602.687.218 1.313.187 1.806.114.551-.082 1.674-.684 1.91-1.344.236-.661.236-1.227.165-1.344-.071-.118-.259-.188-.542-.33z" />
+    </svg>
+  </a>
 
   <!-- Script WhatsApp + Seleção Dinâmica -->
   <script>
-    const planos = document.querySelectorAll('#planos > div');
-    const numeroDestino = '5561999822652'; // SEU NÚMERO COM DDD
 
-    planos.forEach((plano) => {
-      const botao = plano.querySelector('.btn-plano');
+    document.querySelectorAll('.btn-plano').forEach((botao) => {
+      botao.addEventListener('click', function () {
 
-      // Seleção do Card (muda borda)
-      plano.addEventListener('click', () => {
-        planos.forEach((p) => p.classList.remove('border-blue-600'));
-        plano.classList.add('border-blue-600');
-      });
+        const plano = this.closest('.plano');
 
-      // Redirecionamento WhatsApp com Plano
-      botao.addEventListener('click', (event) => {
-        event.stopPropagation(); // Evita conflito com clique no card
-        const nomePlano = plano.getAttribute('data-plano');
-        const valorPlano = plano.getAttribute('data-valor');
-        const mensagem = `Olá! Tenho interesse no *${nomePlano}* no valor de *R$ ${valorPlano},00/mês*. Quero saber mais!`;
+        const name = plano.getAttribute('data-plano');
 
-        const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensagem)}`;
+        const valor = plano.getAttribute('data-valor');
+
+        const numeroDestino = '5561999822652';
+
+        const msg = `Olá, quero saber mais sobre o *${name}* no valor de R$*${valor}*, consegue me ajudar?`;
+
+        const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(msg)}`;
+
         window.open(url, '_blank');
+
       });
     });
+
   </script>
 </body>
+
 </html>
